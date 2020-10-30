@@ -9,11 +9,12 @@ from datetime import date
 pathToFile = r'C:\Users\Deivid\Desktop\test.xls'
 
 keep = gkeepapi.Keep()
-success = keep.login('floodstemp@gmail.com','Floods192!')
+#!Important...make sure to delete login credentials....
+success = keep.login('<email>','<password>')
 
 
 #note = keep.createList('ToDo',[('Item 1', False), ('Item 2', False), ('Item 3', True)])
-note = keep.get('10QdMvjJ2OD4Ddy_wKUeh5qA6KYzJhyUTUPirzfESa-I182kczz8rF4OG8B06GyagrcLs')
+note = keep.get('<noteID>')
 
 keep.sync()
 
